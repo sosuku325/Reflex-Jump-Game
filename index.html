@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>反射神経よくなりそうなゲーム</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="game-wrap" aria-label="恐竜ジャンプゲーム" role="application">
+
+    <header>
+      <h1>反射神経よくなりそうなゲーム</h1>
+        <div class="controls">
+          操作: スペース / ↑ / タップ（長押しで高く）
+        </div>
+    </header>
+
+
+  <canvas id="gameCanvas" width="800"  height="200"></canvas>
+
+  <div id="score" class="hud">SCORE: 0</div>
+
+
+    <div class="overlay" id="startOverlay">
+      <div class="panel">
+        <h2>クリック / タップでスタート</h2>
+        <p class="hint">
+          長押しでジャンプが高くなります（マリオ風）
+        </p>
+      </div>
+    </div>
+
+
+    <div class="overlay" id="gameOverOverlay" style="display: none">
+      <div class="panel">
+        <h2>ゲームオーバー</h2>
+
+        <p id="finalScore">得点: 0</p>
+
+        <div style="margin-top: 12px;">
+          <button id="restartBtn">リスタート</button>
+        </div>
+      </div>
+    </div>
+
+</div>
+
+<script src="index.js"></script>
+</body>
+</html>
